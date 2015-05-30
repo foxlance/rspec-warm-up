@@ -1,4 +1,4 @@
-fdescribe "Composable Matchers - " do
+describe "Composable Matchers - " do
 
     it "should allow multiple matchers" do
         class Book

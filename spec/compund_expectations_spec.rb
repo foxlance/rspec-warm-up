@@ -1,4 +1,4 @@
-fdescribe "Compund Matchers" do
+describe "Compund Matchers" do
     
     it "Allows for multiple expectations" do
         string = "lance"
