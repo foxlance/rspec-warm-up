@@ -1,4 +1,5 @@
-describe "Matchers 101" do
+# xdescribe makes all test cases under this scenario go into skip mode
+describe "Skip 101" do
     
     # appending 'x' on a test case skips its execution
     xit "Assertions on equality" do
