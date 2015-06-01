@@ -40,6 +40,18 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
+
+  # executes after each test case
+  config.after(:example) do |example|
+    # puts "test has finished"
+    # puts example.inspect
+  end
+
+  # executes before everything else
+  config.before(:suite) do
+    puts "Start whole new suite of tests"
+  end
+
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin
