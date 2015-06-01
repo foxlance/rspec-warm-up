@@ -1,7 +1,7 @@
 describe "Composable Matchers - " do
 
     it "should allow multiple matchers" do
-        class Book
+        class Books
             def initialize id, title, isbn
                 @id    = id
                 @title = title
@@ -12,7 +12,7 @@ describe "Composable Matchers - " do
             end
         end
 
-        book = Book.new 256, "Tomato", "Fruit"
+        book = Books.new 256, "Tomato", "Fruit"
 
     	# composable matchers allow multiple matchers on 1 expectation
         expect(book.serial_data).to contain_exactly(
