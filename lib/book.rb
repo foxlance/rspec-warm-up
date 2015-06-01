@@ -7,4 +7,7 @@ class Book
 	def borrow
 		return "allow"
 	end
+	def is_borrowed?
+		false
+	end
 end
