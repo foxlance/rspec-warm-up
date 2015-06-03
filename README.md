@@ -1,2 +1,2 @@
 # rspec-warm-up
-getting use to rspec for ruby
+Some playful warm up exercises to get used with RSpec
