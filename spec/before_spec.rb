@@ -1,6 +1,6 @@
 require "author"
 
-fdescribe "Before 101" do
+describe "Before 101" do
 
     # this directive executes every test case (every 'it' case)
     let(:author) { Author.new }
