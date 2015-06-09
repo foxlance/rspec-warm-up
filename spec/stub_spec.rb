@@ -20,5 +20,29 @@ describe "Stubbing" do
 
         expect(author.books.count).to eq 1 
     end
+
+
+    it "Use a different approach to stubbing" do
+        author = Author.new
+
+        book_stub = instance_double "Book"
+        allow(book_stub).to receive(:title).and_return("The world according to Garp", "Coffee Prince")
+
+        # When using and_return with multiple values, 
+        # you need to call the action with the same number of times
+        # 
+        # or you can do the following like so:
+        # 
+        # 2.times { author.add_book book_stub }
+        # 
+        author.add_book book_stub
+        expect(author.books[0].title).to eq "The world according to Garp"
+
+        # Here, you are passing "Coffee Price", since this is the second pass
+        author.add_book book_stub
+        expect(author.books[1].title).to eq "Coffee Prince"
+        expect(author.books.count).to eq 2
+    end
+    
  
 end
