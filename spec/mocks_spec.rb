@@ -1,6 +1,6 @@
 require "Book"
 
-fdescribe "Mocks" do
+describe "Mocks" do
 
     # mocks behaves like a stub but with a different purpose
     it "Testing mocked object" do
