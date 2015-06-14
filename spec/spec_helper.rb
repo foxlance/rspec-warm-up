@@ -1,7 +1,7 @@
 require "environment"
 require "factory_girl"
 require "database_cleaner"
-
+require_relative "./factories.rb"
 
 RSpec.configure do |config|
 
