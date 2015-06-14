@@ -1,6 +1,6 @@
 require "ebook"
 
-fdescribe "eBooks - Active Record Integration" do
+describe "eBooks - Active Record Integration" do
 	
 	it "Cannot create a new ebook with no title and isbn" do
 	    ebook = build(:ebook)
